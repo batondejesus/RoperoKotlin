@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagen_esqueleto"
+        android:layout_width="159dp"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/ic_launcher" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:gravity="center">
+
+        <TableRow
+            android:id="@+id/nada"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/titulo_esqueleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbXL"
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="XL" />
+
+                <RadioButton
+                    android:id="@+id/rbL"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="L" />
+
+                <RadioButton
+                    android:id="@+id/rbS"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="S" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/precio_esqueleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
